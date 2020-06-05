@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "641238a5-7cba-4c74-ab90-1156c15ce1f4",
+		"name": "NetworkShareTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6075/api/home/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6075",
+					"path": [
+						"api",
+						"home",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload FIle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/C:/Users/logix/Downloads/Melancholy.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:6075/api/home/file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6075",
+					"path": [
+						"api",
+						"home",
+						"file"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
